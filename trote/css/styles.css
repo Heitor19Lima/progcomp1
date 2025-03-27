@@ -67,3 +67,38 @@ table tr td {
 table{
     margin: 0 auto; /* centralizar a tabela na pagina */
 }
+
+.Laranja {
+    background-color: orange;
+}
+
+.Preta {
+    background-color: black;
+    color: white;
+}
+
+.Roxa {
+    background-color: purple;
+}
+
+.Verde {
+    background-color: green;
+}
+
+.Vermelha {
+    background-color: red;
+}
+
+.Azul {
+    background-color: navy;
+    color: white;
+}
+
+h4 {
+    text-align: center;
+}
+
+.campos {
+    margin-bottom: 20px;
+}
+
