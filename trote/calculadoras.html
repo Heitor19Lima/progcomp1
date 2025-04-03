@@ -30,6 +30,15 @@
         <h2> Calculadoras </h2>
         <form>
             <div class="campos">
+                <label> Selecione a cor da equipe </label>   
+                <select id="Equipe">
+                    <option value="Laranja"> Laranja </option> 
+                    <option value="Preta"> Preta </option>   
+                    <option value="Roxa"> Roxa </option>   
+                    <option value="Verde"> Verde </option>   
+                    <option value="Vermelha"> Vermelha </option>  
+                </select>         
+                <div class="campos">
                 <label> Mascote do time </label>
                 <input type="number" id="Mascote"/>
             </div>
@@ -42,16 +51,16 @@
                 <input type="number" id="Leite"/>
             </div>
             <div class="campos">
-                <label> Kit alimentação (Avulso) </label>
-                <input type="number" id="KitAvulso"/>
+                <label> Kit alimentação </label>
+                <input type="number" id="Kit"/>
             </div>
             <div class="campos">
-                <label> Suplemento (Avulso) </label>
-                <input type="number" id="SuplementoAvulso"/>
+                <label> Suplemento </label>
+                <input type="number" id="Suplemento"/>
             </div>
             <div class="campos">
                 <button type="button" onclick="calcular()"> Calcular </button>
-                <label id="soma"> </label>
+                <label id="Soma"> </label>
             </div>
         </form>
     </div>

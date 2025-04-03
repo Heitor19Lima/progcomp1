@@ -2,19 +2,38 @@
 function calcular(){
     // vamos criar 2 variaveis
     // Js as variaveis nao possuem tipo
-    let Mascote, Homenagem, Leite, KitAvulso, SuplementoAvulso
+    let Mascote, Homenagem, Leite, Kit, Suplemento, Soma, Equipe
     // recupera o valor do mascote digitdo pelo usuario
-    Mascote = document.getElementById("Mascote").value
+    Mascote = Number(document.getElementById("Mascote").value)
     // recupera o valor da homenagem digitdo pelo usuario
-    Homenagem = document.getElementById("Homenagem").value
+    Homenagem = Number(document.getElementById("Homenagem").value)
     // recupera a quantidade de leite
-    Leite = document.getElementById("Leite").value
+    Leite = Number(document.getElementById("Leite").value)
     // recuperar a qtde de litros de leite
-    KitAvulso = document.getElementById("KitAvulso").value
+    Kit = Number(document.getElementById("Kit").value)
     // recupera a quantidade avulsa de suplemento
-    SuplementoAvulso = document.getElementById("SuplementoAvulso").value
+    Suplemento = Number(document.getElementById("Suplemento").value)
     // calcular a soma
-    let soma = Number(Mascote) + Number(Homenagem) + (2 * Number(Leite)) + (30 * Number(KitAvulso)) + (15 * Number(SuplementoAvulso))
+     Soma = Number(Mascote) + (Homenagem) + (2 * (Leite)) 
+    // Vamos calcular a pontuação considerando metas de kei e supl
+     Equipe = document.getElementById("Equipe").value
+    if (Equipe == "Laranja"){
+        if (Kit>=97 && Suplemento >= 49){
+            Soma = Soma + 5000 + ((Kit-97) * 30) + ((Suplemento - 49) * 15)
+        }
+        else if (Kit >=78 && Suplemento >= 39){
+            Soma = Soma + 4000 + ((kit-78) * 30) + ((Suplemento - 39) *15)
+        }
+        else if (Kit >=49 && Suplemento >= 25){
+            Soma = Soma + 2500 ((Kit-49) * 30) + ((Suplemento - 25) * 15)
+        }
+        else if (Kit>=19 && Suplemento >= 10){
+            Soma = Soma + 1000 ((Kit-19) * 30) + ((Suplemento - 10) * 15)
+        }
+
+        }
+
     // retorna o valor html
-    document.getElementById("soma").innerHTML =`A soma é ${soma}`
+    // template string
+    document.getElementById("Soma").innerHTML =`A Soma é ${Soma}`
 }
