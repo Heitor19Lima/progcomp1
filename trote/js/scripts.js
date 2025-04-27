@@ -45,7 +45,7 @@ function calcular(){
 
         // verifica sangue
         if (Sangue >=52){
-            Soma = Soma + 
+            Soma = Soma 
         }
 
     }
